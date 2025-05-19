@@ -3,7 +3,7 @@ import pandas as pd, numpy as np, matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 
 # --- load canonical data ---
-anchor = pd.read_csv("anchor_pops.csv").sort_values("Year")          # anchors → 2025
+anchor = pd.read_csv("anchor_populations.csv").sort_values("Year")          # anchors → 2025
 proj   = pd.read_csv("UNWPP2022_Medium_Variant_World_Pop_2025_2100.csv").sort_values("Year")  # 5-yr points 2025-2100
 
 # --- build annual world-population series to 2100 ---
