@@ -31,7 +31,7 @@ import sys, pandas as pd, numpy as np, pathlib
 # ----------------------------------------------------------------------
 # 1. Load the anchor grid
 # ----------------------------------------------------------------------
-src = sys.argv[1] if len(sys.argv) == 2 else "anchor_pops.csv"
+src = sys.argv[1] if len(sys.argv) == 2 else "anchor_populations.csv"
 anchor = (pd.read_csv(src, usecols=["Year", "Population_Millions"])
             .sort_values("Year")
             .reset_index(drop=True))
